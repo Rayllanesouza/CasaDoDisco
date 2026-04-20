@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- TÍTULO DA PÁGINA -->
+<title>Casa do Disco</title>
+
+<style>
+
+/*Customização geral do site*/
+body {
+  margin: 0;
+  background: linear-gradient(
+    180deg, #5c362d, #3e2420, #2a1816 );
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Header e menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(92, 54, 45, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* links do menu */
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/*barra de pesquisa*/
+.topbar {
+  padding: 15px 20px;
+}
+
+.search input {
+  width: 93%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  outline: none;
+}
+
+/*banner principal*/
+.hero img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(170,120,100,0.5);
+}
+
+/*categorias(estilo e cores de texto no html)*/
+.categoria {
+  padding: 20px;
+}
+
+.categoria h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* carrosel dos produtos */
+.carrossel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* esconder scrollbar */
+.carrossel::-webkit-scrollbar {
+  display: none;
+}
+/*os textos no final do site*/
+.categoria p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+/* LISTA */
+.categoria ul {
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+.categoria li {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* card dos produtos */
+.produto {
+  width: 110px;
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(8px);
+  scroll-snap-align: start;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+/*movimento dos cards*/
+.produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+/*imagem dos produtos*/
+.produto img {
+  width: 100%;
+  aspect-ratio: 1/1; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*texto dos produtos*/
+.nome {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.preco {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/*rodapé final do site*/
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<!--logo-->
+<header>
+  <div class="logo">Casa do Disco</div>
+
+  <!-- menu -->
+  <nav>
+    <a href="#">Início</a>
+    <a href="mpb.html">MPB</a>
+    <a href="#">Internacional</a>
+  </nav>
+</header>
+
+<!--barra de pesquisa-->
+<div class="topbar">
+  <div class="search">
+    <input type="text" placeholder="Buscar discos...">
+  </div>
+</div>
+
+<!-- banner principal -->
+<section class="hero">
+  <div class="hero-container">
+    <img src="https://i.ibb.co/4ZRwyHTw/e6abcff9663212d4fb6fd9fab936cb8f.jpg">
+  </div>
+</section>
+
+<!-- mais vendidos -->
+<section class="categoria">
+  <h2>Mais vendidos</h2>
+
+  <div class="carrossel">
+
+    <!-- produtos -->
+    <a href="https://open.spotify.com/artist/0yFvXd36g5sNKYDi0Kkvl8?si=MIE2N9s3RuudSkvY1cjNbg" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/tRVp2NXC/a2aab5859a6b84639b1ffaa54315d0a5.jpg">
+      <div class="nome">Elis Regina</div>
+      <div class="preco">R$ 89</div>
+    </div></a>
+
+<a href="https://open.spotify.com/artist/0jOs0wnXCu1bGGP7kh5uIu?si=N5nygLP2TeaOgBOScH2CuA" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/SQ8bWQGv/74101b8f1fbafb0af433ed323301810c.jpg">
+      <div class="nome">Tim Maia</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/5JYtpnUKxAzXfHEYpOeeit?si=IxVwgL07RUacKYAkacvoPQ" target="_blank">
+       <div class="produto">
+      <img src="https://i.postimg.cc/3w6zvz0k/6a494db953e972211948065a44588047.jpg">
+      <div class="nome">Jorge Ben Jor</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/6tOsSffQQIXmK8TqsDck8t?si=fesJPcEKSQmmZKyZmyC0vw" target="_blank">
+       <div class="produto">
+      <img src="https://i.postimg.cc/fTZpmcy7/002e47ecc10c540f80866b2bc456b57f.jpg">
+      <div class="nome">Chico Buarque</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/7HGNYPmbDrMkylWqeFCOIQ?si=PWCs8alGRKGPj3s4qFdwcw" target="_blank">
+   <div class="produto">
+      <img src="https://i.postimg.cc/y8pbM2Pr/fc1f118b2937176c40ccb335fb3410c2.jpg">
+      <div class="nome">Caetano Veloso</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+
+  </div>
+</section>
+
+<!--mais recentes-->
+<section class="categoria">
+  <h2>Mais recentes</h2>
+  
+  <div class="carrossel">
+    
+    <a href="https://open.spotify.com/artist/1sPg5EHuQXTMElpZ4iUgXe?si=D1lbWLaMQGq96rWqLajkbg" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/Qdzf418P/538f79db66c7f522bd319e17f67512f2.jpg">
+      <div class="nome">AnaVitória</div>
+      <div class="preco">R$ 120</div>
+    </div></a>
+
+<a href="https://open.spotify.com/artist/0rSTXALHu0EKAawPLBdODH?si=oUUsTOstRveO37H9yYeZiw" target="_blank">
+<div class="produto">
+      <img src="https://i.postimg.cc/HWtBGfWx/47137e634aee3eb62765e08f00be348f.jpg">
+      <div class="nome">Marisa Monte</div>
+      <div class="preco">R$ 120</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/0slVGXBggrLglTLNKbeEyW?si=haAlPBGOQmirUVwmxJ00Cg" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/BbZ5QnZ6/0a3e29998a5cb3a298bc41e7877980e5.jpg">
+      <div class="nome">Rubel</div>
+      <div class="preco">R$ 120</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/5D56dZmhE9DgT01XixdHiD?si=XBznZ3F5QCCjhZVyyeGeEQ" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/VLV9mwxw/fd245c3c670ff2c76793ae8828f53aaf.jpg">
+      <div class="nome">Lagum</div>
+      <div class="preco">R$ 120</div>
+    </div></a>
+
+<a href="https://open.spotify.com/artist/3Ujv6sa60JRiaxS8RVuNOj?si=Xp1e4MqcQbqrl2i1WVLuzg" target="_blank">
+<div class="produto">
+      <img src="https://i.postimg.cc/CKjbGqzd/cb68cfcddd3ef7ae0b8b92b8b3abe7cf.jpg">
+      <div class="nome">Tuyo</div>
+      <div class="preco">R$ 120</div>
+    </div></a>
+
+  </div>
+</section>
+
+<!-- internacional -->
+<section class="categoria">
+  <h2>Internacional</h2>
+
+  <div class="carrossel">
+
+<a href="https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2?si=gTd5ylMvSiSD6J_tZUQS9Q" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/90N9mPN1/824c8f2702fd3e2e2fdaf5547e5ff2a3.jpg">
+      <div class="nome">The Beatles</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d?si=fF62U7QGQg2N54lr9YdPtA" target="_blank">
+        <div class="produto">
+      <img src="https://i.postimg.cc/SsSYct0q/2c85eb2bde44430b405dcbe3799e40c8.jpg">
+      <div class="nome">Queen</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm?si=-4v6Z3RSSDK5XncgVHs3HQ" target="_blank">
+        <div class="produto">
+      <img src="https://i.postimg.cc/WpfqJnXS/b6dddea00fd03ee47a3be52ff0db97de.jpg">
+      <div class="nome">Michael Jackson</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/7Ln80lUS6He07XvHI8qqHH?si=vmSAwT94Quyk7e-dm-iT6w" target="_blank">
+        <div class="produto">
+      <img src="https://i.postimg.cc/7YFCKLvB/09447b4159404b684b8933fb65a28e2d.jpg">
+      <div class="nome">Arctic Monkeys</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+
+  </div>
+  </section>
+  
+  <!--recomendados-->
+  <section class="categoria">
+  <h2>Recomendados</h2>
+
+  <div class="carrossel">
+    
+    <a href="https://open.spotify.com/artist/4EKJxXaAZapG14Q5FTZoxm?si=rHIH06EHTpWzuD2KdFoRLA" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/J09hYpFH/82b1e81bbe60c64fe7e4bc8da64f410f.jpg">
+      <div class="nome">Secos e Molhados</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/2ohBjgFT9V0LRDWO2wF9DJ?si=5QJF9et-Qzem6b956v4cxw" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/HLBk1YN3/247596d827f6bb844cd79bf21e7e14a9.jpg">
+      <div class="nome">Novos Baianos</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/559vxOLTzlAv0zB77JMcdG?si=v_43oGr3TsS3e9UKlXYWTw" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/MHj6ByGT/3d98ab25b7f922da107251187974aea4.jpg">
+      <div class="nome">Alceu Valença</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb?si=eEJ2gg5EQpK8lczb5k1Rgw" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/13SF9zWX/d8495cc5430b6d2e31e2d1c62ec0d489.jpg">
+      <div class="nome">Tame Impala</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+    
+    <a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb?si=CCovHN7LTxeykfM7cfULyg" target="_blank">
+    <div class="produto">
+      <img src="https://i.postimg.cc/KzCKCck2/6197649ddfc10a67324cad4c148f9295.jpg">
+      <div class="nome">Radiohead</div>
+      <div class="preco">R$ 85</div>
+    </div></a>
+  </div>
+</section>
+
+<!--Informaçoes, sobre, contato-->
+<section class="categoria" id="sobre">
+  <h2>Sobre</h2>
+  <p>
+    A Casa do Disco é uma loja dedicada aos amantes da música,
+    trazendo clássicos da MPB, rock, samba e sucessos internacionais.
+    Nosso objetivo é conectar você aos melhores álbuns em vinil e CD,
+    com qualidade e paixão pela música.
+  </p>
+</section>
+
+<section class="categoria" id="servicos">
+  <h2>Serviços</h2>
+  <ul>
+    <li>Venda de discos de vinil e CDs</li>
+    <li>Recomendação personalizada de álbuns</li>
+    <li>Encomenda de discos raros</li>
+    <li>Curadoria musical</li>
+  </ul>
+</section>
+
+<section class="categoria" id="contato">
+  <h2>Contato</h2>
+  <p>Email: contato@casadodisco.com</p>
+  <p>Instagram: @casadodisco</p>
+  <p>WhatsApp: (61) 99999-9999</p> 
+</section>
+<!-- rodapé -->
+<footer>© Casa do Disco</footer>
+
+</body>
+</html>
